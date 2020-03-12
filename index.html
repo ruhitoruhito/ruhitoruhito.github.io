@@ -3,14 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>タイトル</title>
-    <link rel="stylesheet" href="CSS名.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
+    <!-- header は固定　-->
     <header>
-      <h1>しまだだん</h1>
+      <h1>過去のパンデミック</h1>
+      <div class="change-btn">
+        <p class="prev-btn">←前へ</p>
+        <p class="next-btn">次へ→</p>
+      </div>
+
     </header>
-    <footer>
-    </footer>
+    <div class="main-wrapper">
+      <div class="Upper part">
+        <div class="subject-up">
+          <h1>スペイン風邪</h1>
+        </div>
+        <div  class="term-up">
+          <h3>1918～1919</h3>
+        </div>
+        <div class="text-up">
+          <p>スペイン風邪の詳細</p>
+        </div>
+      </div>
+      <div class="lower part">
+        <div class="subject-low">
+          <h1>エイズ</h1>
+        </div>
+        <div  class="term-low">
+          <h3>1920年～</h3>
+        </div>
+        <div class="text-low">
+          <p>エイズの詳細</p>
+        </div>
+      </div>
+    </div>
+      <!-- この下固定　-->
+    <div class="index-wrapper">
+      <ul>
+        <li　class="active">表題</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </div>
+     <script type="text/javascript" src="index.js"></script>
   </body>
 <html>
