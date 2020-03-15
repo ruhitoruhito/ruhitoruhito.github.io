@@ -1,14 +1,14 @@
 $(function() {
   $(function() {
 	setTimeout(function(){
-		$('.start p').fadeIn(1000);
-	},300);
+		$('.start p').fadeIn(1500);
+	},500);
 	setTimeout(function(){
-		$('.start h4').fadeIn(1000);
+		$('.start h4').fadeIn(1500);
 	},500);//0.5秒後にロゴをフェードイン!
 	setTimeout(function(){
 		$('.start').fadeOut(1000);
-	},1000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+	},1500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
 });
   
   $('.btn').click(function(){
