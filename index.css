@@ -87,6 +87,7 @@ header h1 {
 .main-wrapper {
   border: 10px double #db7093;
   display: none;
+  height:1000px;
   width: 80%;
   margin: 0 auto;
   padding: 0 50px;
