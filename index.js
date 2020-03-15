@@ -1,4 +1,16 @@
 $(function() {
+  $(function() {
+	setTimeout(function(){
+		$('.start p').fadeIn(1000);
+	},300);
+	setTimeout(function(){
+		$('.start h4').fadeIn(1000);
+	},500);//0.5秒後にロゴをフェードイン!
+	setTimeout(function(){
+		$('.start').fadeOut(1000);
+	},1000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+});
+  
   $('.btn').click(function(){
     var $display = $('.active');
     $display.removeClass('active');
@@ -8,16 +20,28 @@ $(function() {
       $display.next().addClass('active');
     };
     
-    $
-    if($display.index() == 0) {
+    
+    var slideIn = $('.main-wrapper').index($('.active'));
+    $('.btn').show();
+    if(slideIn == 0) {
       $('.prev').hide();
+    } else if(slideIn == 3) {
+      $('.next').hide();
     }
   });
   
   $('.index').click(function() {
     var $slideIndex = $('.index').index($(this));
     $('.active').removeClass('active');
-    $('.main-wrapper').eq($slideIndex - 1).addClass('active');
+    $('.main-wrapper').eq($slideIndex).addClass('active');
+    
+    var slideIn = $('.main-wrapper').index($('.active'));
+    $('.btn').show();
+    if(slideIn == 0) {
+      $('.prev').hide();
+    } else if(slideIn == 3) {
+      $('.next').hide();
+    };
   });
   
   
