@@ -20,7 +20,7 @@ body {
   height: auto;    
   max-width: 1200px;
   width: 80%;
-  height: 2000px;
+  height: 1000px;
   margin: 0 auto;
   text-align: center;
   z-index: 10;
@@ -168,4 +168,7 @@ li {
     font-size: 45px;
   }
 	
+  .body-container {
+    width: 100%;
+	}	
 }
