@@ -36,7 +36,7 @@ body {
 	width: 100%;
 	z-index: 9000;
 }
-.start p, .start h1 {
+.start img, .start h4 {
 	position: fixed;
 	left: 50%;
 	top: 50%;
